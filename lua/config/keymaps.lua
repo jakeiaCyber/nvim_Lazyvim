@@ -3,4 +3,4 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "<S-h>", "^")
 vim.keymap.set("n", "<S-l>", "$")
-vim.keymap.set("n", "<Tab>", "<cmd>tabNext<cr>")
+vim.keymap.set("n", ";", ":")
