@@ -1,8 +1,14 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin-latte",
+    },
+  },
+  {
     "hrsh7th/nvim-cmp",
     opts = function(_, opts)
-      vim.api.nvim_set_hl(0, "PopMenu", { bg = "#1F2335", blend = 0 })
+      -- vim.api.nvim_set_hl(0, "PopMenu", { bg = "#1F2335", blend = 0 })
       local cmp = require("cmp")
       local win_opt = {
         col_offset = 0,
@@ -115,7 +121,7 @@ return {
             " ",
             { filename, gui = modified and "bold,italic" or "bold" },
             " ",
-            guibg = "#44406e",
+            guibg = "	#04a5e5",
           }
         end,
       })
