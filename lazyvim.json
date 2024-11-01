@@ -2,10 +2,7 @@
   "extras": [
     "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.editor.inc-rename",
-    "lazyvim.plugins.extras.lang.clangd",
-    "lazyvim.plugins.extras.lang.json",
-    "lazyvim.plugins.extras.lang.markdown",
-    "lazyvim.plugins.extras.lang.toml"
+    "lazyvim.plugins.extras.lang.clangd"
   ],
   "news": {
     "NEWS.md": "6520"
