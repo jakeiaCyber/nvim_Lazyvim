@@ -38,13 +38,11 @@ vim.api.nvim_create_autocmd("User", {
     vim.keymap.set("n", "<leader>ss", [[<cmd>lua require('vscode').action('workbench.action.gotoSymbol')<cr>]])
 
     -- 基本操作
-    vim.keymap.set("n", "<Leader>q", [[<cmd>lua require('vscode').action('workbench.action.closeWindow')<cr>]])
     vim.keymap.set("n", "<Leader>w", [[<cmd>lua require('vscode').action('workbench.action.files.save')<cr>]])
-    vim.keymap.set("n", "<Leader>n", [[<cmd>lua require('vscode').action('welcome.showNewFileEntries')<cr>]])
 
     -- 分屏导航
-    vim.keymap.set("n", "|", [[<cmd>lua require('vscode').action('workbench.action.splitEditor')<cr>]])
-    vim.keymap.set("n", "\\", [[<cmd>lua require('vscode').action('workbench.action.splitEditorDown')<cr>]])
+    vim.keymap.set("n", "\\", [[<cmd>lua require('vscode').action('workbench.action.splitEditor')<cr>]])
+    vim.keymap.set("n", "|", [[<cmd>lua require('vscode').action('workbench.action.splitEditorDown')<cr>]])
     vim.keymap.set("n", "<C-H>", [[<cmd>lua require('vscode').action('workbench.action.navigateLeft')<cr>]])
     vim.keymap.set("n", "<C-J>", [[<cmd>lua require('vscode').action('workbench.action.navigateDown')<cr>]])
     vim.keymap.set("n", "<C-K>", [[<cmd>lua require('vscode').action('workbench.action.navigateUp')<cr>]])
@@ -57,9 +55,7 @@ vim.api.nvim_create_autocmd("User", {
     -- 缓冲区管理
     vim.keymap.set("n", "<Tab>", "<Cmd>Tabnext<CR>")
     vim.keymap.set("n", "<S-Tab>", "<Cmd>Tabprevious<CR>")
-    vim.keymap.set("n", "<Leader>c", "<Cmd>Tabclose<CR>")
-    vim.keymap.set("n", "<Leader>C", "<Cmd>Tabclose!<CR>")
-    vim.keymap.set("n", "<Leader>bp", "<Cmd>Tablast<CR>")
+    vim.keymap.set("n", "<Leader>q", "<Cmd>Tabclose<CR>")
 
     -- 文件浏览器
     vim.keymap.set(
@@ -116,7 +112,7 @@ vim.api.nvim_create_autocmd("User", {
     vim.keymap.set("n", "<Leader>po", [[<cmd>lua require('vscode').action('projectManager.listProjectsNewWindow')<cr>]])
     vim.keymap.set("n", "<Leader>pe", [[<cmd>lua require('vscode').action('projectManager.editProjects')<cr>]])
 
-    -- 动态文件
+    -- 添加文件
     vim.keymap.set("n", "<Leader>na", [[<cmd>lua require('vscode').action('dynoFileUtils.newItems')<cr>]])
   end,
 })
